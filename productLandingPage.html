@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Gupter:wght@400;500;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Gupter:wght@400;500;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Pangolin&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header section -->
+    <header id="header">
+        <img id="header-img" src="tulip-logo.png" alt="logo">
+        <p id="name">Bloom</p>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#About">About</a>
+            <a class="nav-link" href="#product-name">Gallery</a>
+            <a class="nav-link" href="http://127.0.0.1:5500/order.html">Order Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- about section -->
+        <section class="about" id="About">
+            <h2>ABOUT OUR PRODUCT</h2>
+            <p>Tulips are renowned for their captivating beauty, which enchants almost everyone! Their charm lies in
+                their elegant simplicity and the way they grace to any setting. Tulips have a delicate, fresh scent that
+                adds an extra layer of sensory appeal. Their subtle aroma enhances their presence without overwhelming
+                the senses.</p>
+            <p>The tulip's flower shape is a study in elegance. Their petals, which can be smooth or fringed, open in a
+                graceful cup or bowl shape, creating a striking silhouette against the backdrop of spring greenery. The
+                symmetrical form and smooth texture add to their refined appearance.</p>
+            <p>We deliver white tulips in the best condition possible, ensuring high quality for every order. Our
+                commitment is to provide fresh, beautiful flowers that exceed your expectations. You can trust us to
+                bring you stunning white tulips that are perfect for any occasion.</p>
+        </section>
+
+        <!-- gallery section -->
+        <section id="product-name">
+            <p>Vase</p>
+            <p>Bouquet</p>
+            <p>Box</p>
+        </section>
+        <section class="product-img" id="gallery">
+            <section class="slide">
+                <img class="slider1"
+                    src="https://www.creeklinehouse.com/wp-content/uploads/2019/03/TulipTrick-Web-04Fix.jpg"
+                    alt="tulips in a vase">
+                <img class="slider1"
+                    src="https://i5.walmartimages.com/asr/0ebc2567-5f1a-4f5e-9d71-a783adbfa50a.b4f0db17ad6ccc28cbec27c363dcfccf.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+                    alt="tulips in a vase">
+                <img class="slider1"
+                    src="https://images.pexels.com/photos/11840490/pexels-photo-11840490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="tulips in a vase">
+                <div>
+                    <button class="slide-btn" onclick="goNext1()">
+                        Next
+                    </button>
+                </div>
+            </section>
+            <p class="hidden responsive-price">
+                Vase: ₹2500
+            </p>
+            <section class="slide">
+                <img class="slider2" src="https://www.taguigflowers.com/images/detailed/7/tulips-new-04.jpg"
+                    alt="tulips in a bouquet">
+                <img class="slider2"
+                    src="https://makingdream.ca/wp-content/uploads/2024/02/10-White-Tulip-Bouquet-98765561199-1200x1508.jpg"
+                    alt="tulips in a bouquet">
+                <img class="slider2" src="https://whiteroses.sg/cdn/shop/products/photo60_900x.jpg?v=1590050987"
+                    alt="tulips in a bouquet">
+                <div>
+                    <button class="slide-btn" onclick="goNext2()">
+                        Next
+                    </button>
+                </div>
+            </section>
+            <p class="hidden responsive-price">
+                Bouquet: ₹1700
+            </p>
+            <section class="slide">
+                <img class="slider3"
+                    src="https://www.royal-flowers.dp.ua/image/cache/catalog/tulips/flowers-in-a-box-51-white-tulip-Royal-Flowers-Dnipro-720x720.jpg"
+                    alt="tulips in a box">
+                <img class="slider3"
+                    src="https://en.flower-market.dp.ua/image/cache/data/hat_box/tulips/IMG_7861-20-919x1280.jpg">
+                <img class="slider3"
+                    src="https://images.squarespace-cdn.com/content/v1/5a70c7c290bade9b94686b1b/1645540592886-ZKC7GUK9TU5YSDYUES5Q/photo_2022-02-22_04-07-15.jpg?format=1500w"
+                    alt="tulips in a box">
+                <div>
+                    <button class="slide-btn" onclick="goNext3()">
+                        Next
+                    </button>
+                </div>
+            </section>
+            <p class="hidden responsive-price">
+                Box: ₹2000
+            </p>
+        </section>
+        <section class="price">
+            <p id="price1">₹2500</p>
+            <p id="price2">₹1700</p>
+            <p id="price3">₹2000</p>
+        </section>
+        <h2 id="customised"> and we accept customised orders :) </h2>
+
+        <button id="orderbtn" class="btnhidden" onclick="parent.location='http://127.0.0.1:5500/order.html'">Order
+            now</button>
+    </main>
+    <footer>
+        <h1 id="box-1">
+            Get in touch
+        </h1>
+        <p id="box-2">
+            <span id="phone">
+                <span class="fa fa-phone"></span>
+                <span><a href="tel:9643557826">+91 9643557826</a></span>
+            </span>
+            <span>
+                <span class="fa fa-envelope"></span>
+                <a href="mailto:drishti.nanda04@gmail.com">drishti.nanda04@gmail.com</a>
+            </span>
+        </p>
+    </footer>
+    <script src="first.js"></script>
+</body>
+
+</html>

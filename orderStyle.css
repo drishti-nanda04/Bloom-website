@@ -1,0 +1,185 @@
+/* order page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #686868;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+#header-img{
+    margin: 5px;
+    margin-left: 4%;
+    width: 4%;
+    color: white;
+}
+.fa-home{
+    visibility: hidden;
+    padding-left: 4%;
+}
+#name{
+    margin-left: 0.7rem;
+    font-family: "Caveat", cursive;
+    color: white;
+}
+#nav-bar{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+
+}
+.nav-link{
+    padding: 2.5%;
+    font-size: 1.5rem;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(144, 189, 117);
+}
+#background-video{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.form-section{
+    background-color: rgb(243, 243, 208);
+    width: 45%;
+    border: 2px solid rgb(68, 68, 66);
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    opacity: 0.9;
+    border-radius: 15px;
+}
+
+.form-section h1{
+    padding-top: 4%;
+    padding-bottom: 1%;
+    font-size: 2.5rem;
+}
+.form-section p{
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+label{
+    display: block;
+}
+input, select{
+    width: 50%;
+    margin: 10px 20px;
+}
+#submit{
+    width: 15%;
+    margin: 30px;
+    background-color: rgb(78, 74, 74);
+    color: beige;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btnhidden{
+    margin: 5%;
+    padding: 1%;
+    border-radius: 4px;
+    font-size: 25px;
+    font-family: "Pangolin", cursive;
+    color: beige;
+    background-color: rgb(78, 74, 74);
+    position: relative;
+    top: 290px;
+    visibility: hidden;
+}
+
+footer{
+    background-color: rgb(233, 241, 224);
+    font-size: 1.2em;
+    padding: 1.2%;
+     font-family: "Edu VIC WA NT Beginner", cursive;
+     display: flex;
+     align-items: center;
+     margin-top: 0;
+}
+#box-1{
+    width: 30%;
+    margin-left: 16%;
+}
+#box-2{
+    width: 40%;
+}
+#phone{
+    padding-left: 38%;
+    padding-right: 38%;
+}
+@media (max-width: 1000px){
+    .hidden{
+        visibility: hidden;
+    }
+    main{
+        background-image: url("tulip-poster-1.png");
+        height: 640px;
+    }
+    .form-section{
+        top: 15%;
+        width: 60%;
+        left: 20%;
+    }
+    .form-section h1{
+        font-size: 25px;
+        padding-top: 9%;
+    }
+    .form-section p{
+        font-size: 15px;
+        padding: 8%;
+        padding-bottom: 12%;
+    }
+}
+@media (max-width: 600px){
+    footer{
+        display: block;
+        padding: 15%;
+    }
+    #box-1{
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.2em;
+    }
+    #box-2{
+        width: 100%;
+    }
+    #phone{
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+    
+    
+}
+@media (max-width: 500px){
+    #nav-bar{
+        width: 0;
+    }
+    .nav-link{
+        visibility: hidden;
+    }
+    .fa-home{
+        visibility: visible;
+    }
+    #header-img{
+        margin-left: 14% ;
+        width: 8%;
+    }
+    .btnhidden{
+        visibility: visible;
+    }
+    #submit{
+        width: 30%;
+    }
+   
+}
