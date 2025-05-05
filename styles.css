@@ -17,7 +17,7 @@ header{
 }
 #header-img{
     margin: 5px;
-    margin-left: 4%;
+    margin-left: 6.25%;
     width: 4%;
 }
 #name{
@@ -39,7 +39,6 @@ header{
 .nav-link:hover{
     color: rgb(144, 189, 117);
 }
-
 .about{
     width: 60%;
     margin: 2% auto;
@@ -49,7 +48,6 @@ header{
 .about h2{
     margin-bottom: 1em;
 }
-
 .about p{
     margin-top: 2%;
     font-size: 1.1em;
@@ -217,7 +215,6 @@ footer{
         margin: 5%;
         font-size: 30px;
         font-family: "Edu VIC WA NT Beginner", cursive;
-
     }
     #customised{
         margin-top: 0;
@@ -225,6 +222,5 @@ footer{
     #orderbtn{
         display: block;
         margin: 40px auto;
-    }
-    
+    }   
 }
