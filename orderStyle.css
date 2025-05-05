@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-align: center;
     color: #686868;
+    font-family: "Edu VIC WA NT Beginner", cursive;
 }
 header{
     background-color: rgb(0, 0, 0);
@@ -14,7 +15,7 @@ header{
 }
 #header-img{
     margin: 5px;
-    margin-left: 4%;
+    margin-left: 0%;
     width: 4%;
     color: white;
 }
@@ -29,14 +30,13 @@ header{
 }
 #nav-bar{
     display: flex;
-    width: 70%;
+    width: 75%;
     justify-content: flex-end;
 
 }
 .nav-link{
     padding: 2.5%;
     font-size: 1.5rem;
-    font-family: "Edu VIC WA NT Beginner", cursive;
     font-weight: 500;
     text-decoration: none;
     color: white;
@@ -48,7 +48,6 @@ header{
     width: 100%;
     margin-bottom: 0;
 }
-
 .form-section{
     background-color: rgb(243, 243, 208);
     width: 45%;
@@ -68,13 +67,18 @@ header{
 .form-section p{
     padding-bottom: 2%;
     margin-bottom: 2%;
+    font-size: 1.2rem;
 }
 label{
     display: block;
+    font-size: 1.1rem;
 }
 input, select{
     width: 50%;
     margin: 10px 20px;
+}
+#date{
+    margin-top: 2%;
 }
 #submit{
     width: 15%;
@@ -158,7 +162,10 @@ footer{
         display: block;
         width: 100%;
     }
-    
+    label{
+        display: block;
+        font-size: 0.9rem;
+    }
     
 }
 @media (max-width: 500px){
@@ -172,11 +179,14 @@ footer{
         visibility: visible;
     }
     #header-img{
-        margin-left: 14% ;
+        margin-left: 23% ;
         width: 8%;
     }
     .btnhidden{
         visibility: visible;
+    }
+    .form-section{
+        margin-top: 2%;
     }
     #submit{
         width: 30%;
